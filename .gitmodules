@@ -1,0 +1,6 @@
+[submodule "src/wyvern-ethereum"]
+	path = src/wyvern-ethereum
+	url = https://github.com/ProjectWyvern/wyvern-ethereum.git
+[submodule "docs"]
+	path = docs
+	url = https://github.com/ProjectWyvern/redeem.projectwyvern.com.git
