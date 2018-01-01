@@ -3,15 +3,15 @@
   <v-layout>
     <v-flex xs12 sm6 offset-sm3>
       <v-card id="card">
-        <v-card-media src="/static/img/logo-square-red-transparent-200x200.png" height="200px" :contain="true">
+        <v-card-media src="/img/logo-square-red-transparent-200x200.png" height="200px" :contain="true">
         </v-card-media>
         <v-card-title primary-title>
           <div style="width: 100%;">
             <h3 style="text-align: center;" class="headline mb-0">Wyvern ERC20 Token Redemption</h3>
-            <h2 style="text-align: center; color: red;" class="headline mb-0"><em><br />Rinkeby testnet version, this WILL NOT work on the mainnet.</em></h2>
+            <h2 style="text-align: center; color: red;" class="headline mb-0"><em><br />Rinkeby testnet version, this WILL NOT work on the mainnet. Snapshot of block 309114.</em></h2>
             <br /><br />
             <div v-if="selected">
-            <h4>Redeeming UTXO:</h4>
+            <h4>Redeeming UTXO for address {{ address }}:</h4>
             <v-card>
               <v-card-title primary-title style="font-family: Roboto; display: block;">
                 <div style="font-size: 2em;">{{ selected.satoshis / Math.pow(10, 8) }} WYV</div>
@@ -69,7 +69,7 @@
             </div>
             <div v-if="!disclaimer">
             <p style="font-size: 1.2em">
-            This web application will walk you through redeeming your Wyvern on the original Wyvern blockchain for ERC20 WYV tokens on the Ethereum blockchain. These WYV tokens will give you shareholder rights to the Wyvern DAO, which will run the Wyvern Exchange. Learn more at <a href="https://projectwyvern.com" target="_blank">projectwyvern.com</a>. The original Wyvern blockchain will be discontinued.
+            This web application will walk you through redeeming your Wyvern on the original Wyvern blockchain for ERC20 WYV tokens on the Ethereum blockchain. These WYV tokens will give you shareholder rights in the Wyvern DAO, which will run the Wyvern Exchange. Learn more at <a href="https://projectwyvern.com" target="_blank">projectwyvern.com</a>. The original Wyvern blockchain will be discontinued.
             <br /><br />
             You will need access to your Wyvern wallet (either the wyvern-qt GUI or the wyvernd daemon) and access to the Ethereum account where you would like your WYV tokens to be sent. If you do not have an Ethereum account, you can create one using <a href="https://myetherwallet.com/" target="_blank">MyEtherWallet</a> or <a href="https://metamask.io/" target="_blank">Metamask</a>. Your Ethereum account will need a little bit of Ether to send the token redemption transaction(s).
             <br /><br />
