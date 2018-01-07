@@ -8,7 +8,7 @@
         <v-card-title primary-title>
           <div style="width: 100%;">
             <h3 style="text-align: center;" class="headline mb-0">Wyvern ERC20 Token Redemption</h3>
-            <h2 style="text-align: center; color: red;" class="headline mb-0"><em><br />Rinkeby testnet version, this WILL NOT work on the mainnet. Snapshot of block 309114.</em></h2>
+            <h2 style="text-align: center; color: red;" class="headline mb-0"><em><br />Mainnet version. Snapshot of block 315000.</em></h2>
             <br /><br />
             <div v-if="selected">
             <h4>Redeeming UTXO for address {{ address }}:</h4>
@@ -31,7 +31,7 @@
               Send an Ethereum transaction with the specified data, destination address, and gas amount to redeem your Wyvern UTXO. You may enter the below information into your Ethereum wallet of choice or send the transaction to Metamask directly if you have Metamask installed and configured with the account which will receive the tokens.
               <br /><br />
               <v-btn @click="send" :disabled="txHash !== null">Send with Metamask</v-btn>
-              <a v-if="txHash" target="_blank" :href="'https://rinkeby.etherscan.io/tx/' + txHash">View Transaction</a>
+              <a v-if="txHash" target="_blank" :href="'https://etherscan.io/tx/' + txHash">View Transaction</a>
               </div>
               <v-text-field v-if="encoded" label="Encoded Transaction Data (double-click to select)" :value="encoded" textarea disabled />
               <div style="width: 400px;" v-if="encoded">
@@ -151,7 +151,7 @@ export default {
     ],
     utxos: [],
     encoded: null,
-    tokenAddress: config.deployed.rinkeby.WyvernToken,
+    tokenAddress: config.deployed.main.WyvernToken,
     gasAmount: 300000,
     selected: null,
     txHash: null
