@@ -33,7 +33,7 @@
               <v-btn @click="send" :disabled="txHash !== null">Send with Metamask</v-btn>
               <a v-if="txHash" target="_blank" :href="'https://etherscan.io/tx/' + txHash">View Transaction</a>
               </div>
-              <v-text-field v-if="encoded" label="Encoded Transaction Data (double-click to select)" :value="encoded" textarea disabled />
+              <v-text-field v-if="encoded" label="Encoded Transaction Data (double-click to select)" :value="encoded" textarea />
               <div style="width: 400px;" v-if="encoded">
                 <v-text-field label="To Address (Wyvern Token)" :value="tokenAddress" disabled />
                 <v-text-field label="Gas Amount" :value="gasAmount" disabled />
