@@ -4,3 +4,6 @@
 [submodule "docs"]
 	path = docs
 	url = https://github.com/ProjectWyvern/redeem.projectwyvern.com.git
+[submodule "sweep/utxo-merkle-proof"]
+	path = sweep/utxo-merkle-proof
+	url = https://github.com/ProjectWyvern/redeem.projectwyvern.com.git

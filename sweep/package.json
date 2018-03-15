@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "bitcoinjs-lib": "^3.3.2",
+    "bs58check": "^2.1.1",
+    "ethereumjs-util": "^5.1.3",
+    "web3": "^1.0.0-beta.27"
+  }
+}
