@@ -77,7 +77,7 @@
             <br /><br />
             UTXOs (<a href="https://www.r3.com/blog/2017/07/18/what-is-a-utxo/" target="_blank">unspent transaction outputs</a>) must be redeemed one-at-a-time. If you have a large number (due to many small transactions) using this web application may take awhile. You can easily automate the process using a script; contact us if you need help doing so.
             <br /><br />
-            Go through the process carefully. There is no deadline for redeeming your tokens. If you are stuck or confused, head on over to the <a href="https://riot.im/app/#/room/#projectwyvern:matrix.org" target="_blank">Matrix chat (via Riot)</a> or message the Project Wyvern team <a href="https://twitter.com/WyvernExchange" target="_blank">on Twitter</a> for help. <strong>No Wyvern team member will ever ask you for your private keys. Do not give them to anyone who asks.</strong>
+            Go through the process carefully. There is no deadline for redeeming your tokens. If you are stuck or confused, head on over to the <a href="https://riot.im/app/#/room/#projectwyvern:matrix.org" target="_blank">Matrix chat (via Riot)</a> or message the Project Wyvern team <a href="https://twitter.com/WyvernProtocol" target="_blank">on Twitter</a> for help. <strong>No Wyvern team member will ever ask you for your private keys. Do not give them to anyone who asks.</strong>
             </p>
             </div>
           </div>
